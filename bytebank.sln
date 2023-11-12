@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bytebank", "bytebank\bytebank.csproj", "{6F6AD083-5B26-4C78-8BE9-F454B12CE764}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytebank", "bytebank\bytebank.csproj", "{6F6AD083-5B26-4C78-8BE9-F454B12CE764}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermercadoMenorPreco", "SupermercadoMenorPreco\SupermercadoMenorPreco.csproj", "{45EDB01E-20C7-449A-82AB-C640E5D5ADA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupermercadoMenorPreco", "SupermercadoMenorPreco\SupermercadoMenorPreco.csproj", "{45EDB01E-20C7-449A-82AB-C640E5D5ADA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaMedico", "SistemaMedico\SistemaMedico\SistemaMedico.csproj", "{EB4D03C1-0666-4F96-89A1-67BBCC2A098F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{45EDB01E-20C7-449A-82AB-C640E5D5ADA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45EDB01E-20C7-449A-82AB-C640E5D5ADA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45EDB01E-20C7-449A-82AB-C640E5D5ADA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB4D03C1-0666-4F96-89A1-67BBCC2A098F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB4D03C1-0666-4F96-89A1-67BBCC2A098F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB4D03C1-0666-4F96-89A1-67BBCC2A098F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB4D03C1-0666-4F96-89A1-67BBCC2A098F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
