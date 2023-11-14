@@ -4,19 +4,22 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using bytebank.Titular;
 
-namespace bytebank
+namespace bytebank.Contas
 {
     public class ContaCorrente
     {
         public int numero_Agencia;
         public string conta;
-        public string titular;
         public double saldo = 100;
+        public Cliente titular;
+
+
 
         public void Depositar(double valor)
         {
-            this.saldo += valor;
+            saldo += valor;
 
         }
 
@@ -30,9 +33,9 @@ namespace bytebank
 
         public bool Sacar(double valor)
         {
-            if (valor <= this.saldo)
+            if (valor <= saldo)
             {
-                this.saldo -= valor;
+                saldo -= valor;
                 return true;
             }
             else
@@ -41,13 +44,13 @@ namespace bytebank
 
         public bool Transferir(double valor, ContaCorrente destino)
         {
-            if(this.saldo < valor)
+            if (saldo < valor)
             {
                 return false;
             }
             else
             {
-                this.Sacar(valor);
+                Sacar(valor);
                 destino.Depositar(valor);
                 return true;
             }
