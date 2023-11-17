@@ -69,31 +69,41 @@ using bytebank.Titular;
 //Console.WriteLine(valor);
 //Console.WriteLine(valor2);
 
-Cliente cliente = new Cliente(); 
-cliente.nome = "Andre Silva";
-cliente.cpf = "1234567890";
-cliente.profissao = "Analista";
+//Cliente cliente = new Cliente(); 
+//cliente.nome = "Andre Silva";
+//cliente.cpf = "1234567890";
+//cliente.profissao = "Analista";
 
-ContaCorrente conta = new ContaCorrente();
-conta.titular = cliente;
-conta.conta = "1010-x";
-conta.numero_Agencia = 15;
-conta.saldo = 100;
+//ContaCorrente conta = new ContaCorrente();
+//conta.titular = cliente;
+//conta.conta = "1010-x";
+//conta.numero_Agencia = 15;
+//conta.saldo = 100;
 
-ContaCorrente conta2 = new ContaCorrente();
-conta2.titular=new Cliente();
-conta2.titular.nome = "José Souza";
-conta2.titular.profissao = "Tester";
-conta2.titular.cpf = "2345678901";
-conta2.conta = "1011-x";
-conta2.numero_Agencia = 16;
-conta2.saldo = 500;
+//ContaCorrente conta2 = new ContaCorrente();
+//conta2.titular=new Cliente();
+//conta2.titular.nome = "José Souza";
+//conta2.titular.profissao = "Tester";
+//conta2.titular.cpf = "2345678901";
+//conta2.conta = "1011-x";
+//conta2.numero_Agencia = 16;
+//conta2.saldo = 500;
 
-Console.WriteLine(conta2.titular.nome);
+//Console.WriteLine(conta2.titular.nome);
 
-Console.WriteLine($"Titular = {conta.titular.nome}");
-Console.WriteLine($"Titular = {conta.titular.cpf}");
-Console.WriteLine($"Titular = {conta.titular.profissao}");
-Console.WriteLine($"Titular = {conta.conta}");
-Console.WriteLine($"Titular = {conta.numero_Agencia}");
-Console.WriteLine($"Titular = {conta.saldo}");
+//Console.WriteLine($"Titular = {conta.titular.nome}");
+//Console.WriteLine($"Titular = {conta.titular.cpf}");
+//Console.WriteLine($"Titular = {conta.titular.profissao}");
+//Console.WriteLine($"Titular = {conta.conta}");
+//Console.WriteLine($"Titular = {conta.numero_Agencia}");
+//Console.WriteLine($"Titular = {conta.saldo}");
+
+
+ContaCorrente conta3 = new ContaCorrente();
+conta3.Numero_Agencia = 18;
+conta3.Conta = "1011-H";
+conta3.SetSaldo(50);
+Console.WriteLine(conta3.GetSaldo());
+Console.WriteLine(conta3.Numero_Agencia);
+Console.WriteLine(conta3.Conta);
+
