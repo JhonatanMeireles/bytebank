@@ -88,25 +88,25 @@ namespace bytebank.Contas
             return this.saldo;
         }
 
-        //public void ExibirInfoConta()
-        //{
-        //    Console.WriteLine($"Conta:            {conta}");
-        //    Console.WriteLine($"Agência:          {numero_Agencia}");
-        //    Console.WriteLine($"Titular:          {titular}");
-        //    Console.WriteLine($"Saldo atualizado: {saldo}\n\n");
-        //}
-
-        public ContaCorrente(int numero_agencia, string numero_conta)
+        public void ExibirInfoConta()
+        {
+            Console.WriteLine($"Conta:            {Conta}");
+            Console.WriteLine($"Agência:          {numero_Agencia}");
+            Console.WriteLine($"Titular:          {Titular.Nome}");
+            Console.WriteLine($"Saldo atualizado: {saldo}\n\n");
+        }
+        
+        public ContaCorrente(int numero_agencia, string numero_conta,double valor, Cliente nome)
         {
             this.Numero_Agencia = numero_agencia;
             this.Conta = numero_conta;
+            this.saldo = valor;
+            Titular = nome;
+
             TotalDeContasCriadas++;
 
         }
 
-        public ContaCorrente()
-        {
-
-        }
+    
     }
 }

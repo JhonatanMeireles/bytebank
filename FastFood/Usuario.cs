@@ -17,7 +17,7 @@ namespace FastFood
         public Endereco endereco;
 
         
-        public void SetUsuario(string name, int age, string document, string street, int number, string city, string district)
+        public void SetUsuario(string name, int age, string document, Endereco street = , int number, string city, string district)
         {
             if(this.endereco == null)
             {
@@ -26,7 +26,7 @@ namespace FastFood
             this.nome = name;
             this.idade = age;
             this.documento = document;
-            this.endereco.rua = street;
+            
             this.endereco.numero = number;
             this.endereco.cidade = city;
             this.endereco.bairro = district;

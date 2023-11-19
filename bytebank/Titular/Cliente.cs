@@ -13,6 +13,11 @@ namespace bytebank.Titular
         public string CPF { get; set; }
         public string Profissao { get; set; }
 
-        public Cliente() { }
+        public Cliente(string name, string document, string profissao) 
+        {
+            this.Nome = name;
+            this.CPF = document;
+            this.Profissao = profissao;
+        }
     }
-}
+} 

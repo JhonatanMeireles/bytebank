@@ -115,10 +115,19 @@ using bytebank.Titular;
 //Console.WriteLine(conta4.GetSaldo());
 //Console.WriteLine(conta4.Numero_Agencia);
 
+Cliente cliente5 = new Cliente("Jhonatan", "documentoJ", "Customer Success Analyst");
+ContaCorrente conta5 = new ContaCorrente(283,"1234-x",200,cliente5);
+conta5.ExibirInfoConta();
+//Console.WriteLine($"No momento há {ContaCorrente.TotalDeContasCriadas} contas criadas.");
 
-ContaCorrente conta5 = new ContaCorrente(283,"1234-x");
-Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
-ContaCorrente conta6 = new ContaCorrente(284, "9784-z");
-Console.WriteLine(ContaCorrente.TotalDeContasCriadas) ;
-ContaCorrente conta7 = new ContaCorrente(285, "1111-z");
-Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+Cliente cliente6 = new Cliente("Érika", "documentoÉ", "Promoter");
+ContaCorrente conta6 = new ContaCorrente(284, "9784-z",200, cliente6);
+conta6.ExibirInfoConta();
+
+
+
+Cliente cliente7 = new Cliente("Bernardo", "documentoB", "Estudante");
+ContaCorrente conta7 = new ContaCorrente(285, "1111-z", 300, cliente7);
+conta7.ExibirInfoConta();
+Console.WriteLine($"No momento há {ContaCorrente.TotalDeContasCriadas} contas criadas.");
