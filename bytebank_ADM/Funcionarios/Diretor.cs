@@ -8,9 +8,19 @@ namespace bytebank_ADM.Funcionarios
 {
     public class Diretor : Funcionario
     {
-        public double GetBonificacao()
+        public override double GetBonificacao()
         {
-            return this.Salario;
+            return this.Salario + base.GetBonificacao();
         }
+
+        public override double GetPremioSemestral()
+        {
+            return this.Salario + base.GetPremioSemestral() ;
+        }
+        public Diretor()
+        {
+            Console.WriteLine("Criando um diretor");
+        }
+
     }
 }

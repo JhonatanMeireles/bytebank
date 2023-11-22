@@ -8,6 +8,8 @@ pedro.Salario = 2000;
 
 Console.WriteLine(pedro.Nome);
 Console.WriteLine(pedro.GetBonificacao());
+Console.WriteLine(pedro.GetPremioSemestral());
+
 
 Diretor roberta = new Diretor();
 roberta.Nome = "Roberta Silva";
@@ -16,9 +18,16 @@ roberta.Salario = 5000;
 
 Console.WriteLine(roberta.Nome);
 Console.WriteLine(roberta.GetBonificacao());
+Console.WriteLine(roberta.GetPremioSemestral());
+
 
 GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
 gerenciador.Registrar(pedro);
 gerenciador.Registrar(roberta);
 
+
+
+
 Console.WriteLine("Total de bonificações: " + gerenciador.TotalDeBonificacao);
+
+Console.WriteLine("Total de funcionários: " + Funcionario.TotalDeFuncionarios);
