@@ -17,9 +17,15 @@ namespace bytebank_ADM.Funcionarios
         {
             return this.Salario + base.GetPremioSemestral() ;
         }
-        public Diretor()
+        public Diretor(string cpf, double salario) : base (cpf, salario)
         {
-            Console.WriteLine("Criando um diretor");
+            
+            //Console.WriteLine("Criando um diretor");
+        }
+
+        public override void AumentarSalario()
+        {
+            this.Salario *= 1.15;
         }
 
     }

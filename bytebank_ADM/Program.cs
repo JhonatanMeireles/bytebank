@@ -1,20 +1,16 @@
 ﻿using bytebank_ADM.Funcionarios;
 using bytebank_ADM.Utilitario;
 
-Funcionario pedro = new Funcionario();
+Funcionario pedro = new Funcionario("123456789-1",2000);
 pedro.Nome = "Pedro Sampaio";
-pedro.Cpf = "123456789-1";
-pedro.Salario = 2000;
 
 Console.WriteLine(pedro.Nome);
 Console.WriteLine(pedro.GetBonificacao());
 Console.WriteLine(pedro.GetPremioSemestral());
 
 
-Diretor roberta = new Diretor();
+Diretor roberta = new Diretor("987654321-9", 5000);
 roberta.Nome = "Roberta Silva";
-roberta.Cpf = "987654321-9";
-roberta.Salario = 5000;
 
 Console.WriteLine(roberta.Nome);
 Console.WriteLine(roberta.GetBonificacao());
@@ -27,7 +23,12 @@ gerenciador.Registrar(roberta);
 
 
 
-
 Console.WriteLine("Total de bonificações: " + gerenciador.TotalDeBonificacao);
 
 Console.WriteLine("Total de funcionários: " + Funcionario.TotalDeFuncionarios);
+
+pedro.AumentarSalario();
+roberta.AumentarSalario();
+Console.WriteLine("Novo salário do Pedro :" + pedro.Salario);
+
+Console.WriteLine("Novo salário do Roberta :" + roberta.Salario);
