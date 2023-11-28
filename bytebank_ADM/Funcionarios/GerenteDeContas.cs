@@ -8,9 +8,8 @@ namespace bytebank_ADM.Funcionarios
 {
     public class GerenteDeContas : Funcionario
     {
-        public GerenteDeContas(string cpf, double salario) : base(cpf, salario) 
+        public GerenteDeContas(string cpf) : base(cpf, 4000) 
         {
-            this.Salario = 4000;
 
         }
 

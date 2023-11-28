@@ -8,9 +8,9 @@ namespace bytebank_ADM.Funcionarios
 {
     public class Auxiliar : Funcionario
     {
-        public Auxiliar(string cpf, double salario) : base(cpf,salario) 
+        public Auxiliar(string cpf) : base(cpf,2000) 
         {
-            this.Salario = 2000;
+
         
         }
 
