@@ -23,12 +23,22 @@ gerenciador.Registrar(roberta);
 
 
 
-Console.WriteLine("Total de bonificações: " + gerenciador.TotalDeBonificacao);
-
-Console.WriteLine("Total de funcionários: " + Funcionario.TotalDeFuncionarios);
-
 pedro.AumentarSalario();
 roberta.AumentarSalario();
 Console.WriteLine("Novo salário do Pedro :" + pedro.Salario);
-
 Console.WriteLine("Novo salário do Roberta :" + roberta.Salario);
+
+
+Designer otavio = new Designer("23564512-8", 1);
+otavio.Nome = "Otavio Batista";
+Console.WriteLine(otavio.Nome);
+Console.WriteLine(otavio.GetBonificacao());
+Console.WriteLine(pedro.GetPremioSemestral());
+
+gerenciador.Registrar(otavio);
+otavio.AumentarSalario();
+Console.WriteLine("Novo salário do Otávio :" + otavio.Salario);
+
+
+Console.WriteLine("Total de bonificações: " + gerenciador.TotalDeBonificacao);
+Console.WriteLine("Total de funcionários: " + Funcionario.TotalDeFuncionarios);
