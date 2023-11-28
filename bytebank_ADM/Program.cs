@@ -33,11 +33,32 @@ Designer otavio = new Designer("23564512-8", 1);
 otavio.Nome = "Otavio Batista";
 Console.WriteLine(otavio.Nome);
 Console.WriteLine(otavio.GetBonificacao());
-Console.WriteLine(pedro.GetPremioSemestral());
+Console.WriteLine(otavio.GetPremioSemestral());
 
 gerenciador.Registrar(otavio);
 otavio.AumentarSalario();
 Console.WriteLine("Novo salário do Otávio :" + otavio.Salario);
+
+GerenteDeContas reginaldo = new GerenteDeContas("3265326532-8", 3999);
+reginaldo.Nome = "Reginaldo Baptista";
+Console.WriteLine(reginaldo.Nome);
+Console.WriteLine(reginaldo.GetBonificacao());
+Console.WriteLine(reginaldo.GetPremioSemestral());
+
+gerenciador.Registrar(reginaldo);
+reginaldo.AumentarSalario();
+Console.WriteLine("Novo salário do Reginaldo :" + reginaldo.Salario);
+
+Auxiliar weverton = new Auxiliar("45214521-8", 3000);
+weverton.Nome = "Weverton pai do Thaylon";
+Console.WriteLine(weverton.Nome);
+Console.WriteLine(weverton.GetBonificacao());
+Console.WriteLine(weverton.GetPremioSemestral());
+
+gerenciador.Registrar(weverton);
+weverton.AumentarSalario();
+Console.WriteLine("Novo salário do Weverton :" + weverton.Salario);
+
 
 
 Console.WriteLine("Total de bonificações: " + gerenciador.TotalDeBonificacao);
