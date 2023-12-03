@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytebank_ADM", "bytebank_AD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desafios2", "Desafios2", "{8CCC2902-947E-4155-9E5F-643394A23319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\Calculadora.csproj", "{11A97F2B-DA02-4CD3-A3A2-52EA46B4321F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculadora", "Calculadora\Calculadora.csproj", "{11A97F2B-DA02-4CD3-A3A2-52EA46B4321F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desafioEditora", "desafioEditora\desafioEditora.csproj", "{057220C8-1AF0-472A-9C96-18909917796D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{11A97F2B-DA02-4CD3-A3A2-52EA46B4321F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11A97F2B-DA02-4CD3-A3A2-52EA46B4321F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11A97F2B-DA02-4CD3-A3A2-52EA46B4321F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057220C8-1AF0-472A-9C96-18909917796D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057220C8-1AF0-472A-9C96-18909917796D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057220C8-1AF0-472A-9C96-18909917796D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057220C8-1AF0-472A-9C96-18909917796D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
